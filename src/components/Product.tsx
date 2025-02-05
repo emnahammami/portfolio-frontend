@@ -1,9 +1,9 @@
 /* eslint-disable prettier/prettier */
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import axios from "axios";
+import axios from 'axios';
 
-import Divider from "./Divider";
+import Divider from './Divider';
 
 // Interface pour le projet
 interface IProject {
@@ -16,6 +16,8 @@ interface IProject {
   video?: string;
 }
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL; // 🔹 Récupération de l'URL de l'API
+
 const Product = () => {
   const [projects, setProjects] = useState<IProject[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -26,15 +28,15 @@ const Product = () => {
     const fetchProjects = async () => {
       try {
         const response = await axios.get<IProject[]>(
-          "http://localhost:5000/api/projets/getProjects"
+          `${API_URL}/projets/getProjects`
         );
         if (response.data.length > 0) {
           setProjects(response.data);
         } else {
-          setError("Aucun projet trouvé.");
+          setError('Aucun projet trouvé.');
         }
       } catch (err) {
-        setError("Erreur lors de la récupération des données.");
+        setError('Erreur lors de la récupération des données.');
       } finally {
         setLoading(false);
       }
@@ -43,7 +45,8 @@ const Product = () => {
     fetchProjects();
   }, []);
 
-  if (loading) return <p className="text-center text-gray-500">Chargement...</p>;
+  if (loading)
+    return <p className="text-center text-gray-500">Chargement...</p>;
   if (error) return <p className="text-center text-red-500">{error}</p>;
 
   const project = projects[selectedProjectIndex];
@@ -61,7 +64,7 @@ const Product = () => {
               {project?.description}
             </h3>
             <p className="text-gray-600">
-              Technologies: {project?.technologies.join(", ")}
+              Technologies: {project?.technologies.join(', ')}
             </p>
             {project?.lienCode && (
               <p className="mt-2">
@@ -77,7 +80,7 @@ const Product = () => {
             )}
           </div>
           <div className="w-full sm:w-1/2 p-6">
-            {project?.images.length as any > 0 && (
+            {(project?.images.length as any) > 0 && (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {project?.images.map((img, index) => (
                   <img
