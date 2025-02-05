@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { useCallback, useEffect, useState } from 'react';
 
 const useResponsiveSize = () => {
