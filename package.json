@@ -21,7 +21,7 @@
     "framer-motion": "^5.0.0",
     "next": "^15.1.6",
     "next-seo": "^4.28.1",
-    "react": "^19.0.0",
+    "react": "^18.0.0",
     "react-dom": "^19.0.0",
     "react-scroll": "^1.8.4",
     "smooth-scroll": "^16.1.3",
