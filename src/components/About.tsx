@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 
 import config from '../config/index.json';
@@ -5,7 +6,7 @@ import config from '../config/index.json';
 const About = () => {
   const { company, about } = config;
   const { logo, name: companyName } = company;
-  const { socialMedia, sections } = about;
+  const { socialMedia } = about;
 
   return (
     <div
@@ -17,7 +18,7 @@ const About = () => {
           <img src={logo} alt={companyName} className="w-16 h-16" />
         </div>
         <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-4 h-12">
-          {sections.map((section, index) => (
+          {/* {sections.map((section, index) => (
             <a
               key={`${section.name}-${index}`}
               href={section.href}
@@ -25,7 +26,7 @@ const About = () => {
             >
               {section.name}
             </a>
-          ))}
+          ))} */}
         </div>
         <div className="flex items-center gap-x-8 mt-6 h-8">
           <a
@@ -79,9 +80,9 @@ const About = () => {
         </div>
         <div className="flex items-center mt-6">
           <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">
-            &copy; {new Date().getFullYear()} designed by{' '}
-            <a href="https://github.com/issaafalkattan" rel="nofollow">
-              Issaaf Kattan
+            &copy; {new Date().getFullYear()} created by{' '}
+            <a href="https://github.com/emnahammami" rel="nofollow">
+            Emna   Hammami
             </a>
           </p>
         </div>

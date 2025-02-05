@@ -1,21 +1,12 @@
 {
   "company": {
-    "name": "React landing page 2021",
+    "name": "Emna's Portfolio",
     "logo": "/assets/images/logo.png"
   },
   "navigation": [
     {
-      "name": "Product",
+      "name": "Projects",
       "href": "product"
-    },
-    {
-      "name": "Features",
-      "href": "features"
-    },
-
-    {
-      "name": "Pricing",
-      "href": "pricing"
     },
     {
       "name": "About",
@@ -27,21 +18,21 @@
     "href": "#"
   },
   "mainHero": {
-    "title": "Use me as your",
-    "subtitle": "landing page.",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-    "img": "/assets/images/happyTeam.jpeg",
+    "title": "Emna",
+    "subtitle": "Hammami.",
+    "description": "A passionate developer, Bringing projects to life with flair, A great team player, strong and bright, Always eager to learn and thrive.",
+    "img": "/assets/images/meemna.jpg",
     "primaryAction": {
       "text": "Get started",
       "href": "#"
     },
     "secondaryAction": {
       "text": "Email us",
-      "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
+      "href": "mailto:hammamiemna22@gmail.com?subject=I like react landing page!"
     }
   },
   "product": {
-    "title": "React landing page 2021",
+    "title": "Emna's Portfolio",
     "items": [
       {
         "title": "A plug n play template",
@@ -145,9 +136,9 @@
       }
     ],
     "socialMedia": {
-      "github": "https://github.com/issaafalkattan",
+      "github": "https://github.com/emnahammami",
       "twitter": "https://twitter.com/issaafkattan",
-      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
+      "linkedin": "https://www.linkedin.com/in/emna-hammami-639747178/"
     }
   }
 }
