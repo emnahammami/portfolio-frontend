@@ -28,7 +28,7 @@ const Product = () => {
     const fetchProjects = async () => {
       try {
         const response = await axios.get<IProject[]>(
-          `${API_URL}/projets/getProjects`
+          `${API_URL}/api/projets/getProjects`
         );
         if (response.data.length > 0) {
           setProjects(response.data);
