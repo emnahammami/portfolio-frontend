@@ -1,7 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React, { useEffect, useState } from 'react';
 
-import axios from 'axios';
 
 import Divider from './Divider';
 
@@ -16,7 +15,7 @@ interface IProject {
   video?: string;
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL; // 🔹 Récupération de l'URL de l'API
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 
 const Product = () => {
   const [projects, setProjects] = useState<IProject[]>([]);
@@ -27,23 +26,21 @@ const Product = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get<IProject[]>(
-          `${API_URL}/api/projets/getProjects`
-        );
-        if (response.data.length > 0) {
-          setProjects(response.data);
-        } else {
-          setError('Aucun projet trouvé.');
-        }
+        const res = await fetch(`${API_URL}/projets/getProjects`);
+        const data = await res.json();
+        console.log("Réponse API:", data);
+        setProjects(data);
       } catch (err) {
-        setError('Erreur lors de la récupération des données.');
+        console.error("Erreur API:", err);
+        setError("Erreur lors de la récupération des données.");
       } finally {
         setLoading(false);
       }
     };
-
+  
     fetchProjects();
   }, []);
+  
 
   if (loading)
     return <p className="text-center text-gray-500">Chargement...</p>;
