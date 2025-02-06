@@ -28,7 +28,7 @@ const Product = () => {
       try {
         const res = await fetch(`${API_URL}/projets/getProjects`);
         const data = await res.json();
-        console.log("Réponse API:", data);
+        console.log("Réponse API pls:", data);
         setProjects(data);
       } catch (err) {
         console.error("Erreur API:", err);
