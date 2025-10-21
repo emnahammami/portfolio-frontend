@@ -4,6 +4,7 @@ import React from 'react';
 import About from '../components/About';
 import Analytics from '../components/Analytics';
 import Canvas from '../components/Canvas';
+import Certifs from '../components/Certifs';
 import Header from '../components/Header';
 import LazyShow from '../components/LazyShow';
 import MainHero from '../components/MainHero';
@@ -29,6 +30,7 @@ const App = () => {
         <>
           <Product />
           <Canvas />
+          <Certifs/>
         </>
       </LazyShow>
 

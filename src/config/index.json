@@ -9,8 +9,8 @@
       "href": "product"
     },
     {
-      "name": "About",
-      "href": "about"
+      "name": "Certifications",
+      "href": "certifs"
     }
   ],
   "callToAction": {
@@ -109,6 +109,62 @@
           "100 GB of storage",
           "Phone and Email support"
         ]
+      }
+    ]
+  },
+  "certificates": {
+    "title": "My Certifications",
+    "subtitle": "Professional achievements and learning milestones",
+    "certificates": [
+      {
+        "_id": "cert-1",
+        "titre": "AWS Certified Solutions Architect",
+        "organisme": "Amazon Web Services",
+        "dateObtention": "2023-06-15",
+        "lien": "https://aws.amazon.com/certification/",
+        "images": ["/assets/images/aws-cert.jpg"],
+        "description": "Demonstrated expertise in designing distributed systems on AWS platform",
+        "skills": ["AWS", "Cloud Architecture", "DevOps", "Infrastructure"]
+      },
+      {
+        "_id": "cert-2",
+        "titre": "React Developer Certification",
+        "organisme": "Meta (Facebook)",
+        "dateObtention": "2023-03-20",
+        "lien": "https://www.meta.com/careers/",
+        "images": ["/assets/images/react-cert.jpg"],
+        "description": "Advanced React development skills including hooks, context, and performance optimization",
+        "skills": [
+          "React",
+          "JavaScript",
+          "Frontend Development",
+          "State Management"
+        ]
+      },
+      {
+        "_id": "cert-3",
+        "titre": "Google Cloud Professional Developer",
+        "organisme": "Google Cloud",
+        "dateObtention": "2023-09-10",
+        "lien": "https://cloud.google.com/certification",
+        "images": ["/assets/images/gcp-cert.jpg"],
+        "description": "Expertise in building scalable applications on Google Cloud Platform",
+        "skills": [
+          "Google Cloud",
+          "Microservices",
+          "Kubernetes",
+          "API Development"
+        ]
+      },
+      {
+        "_id": "cert-4",
+        "titre": "Certified Kubernetes Administrator",
+        "organisme": "Cloud Native Computing Foundation",
+        "dateObtention": "2023-11-05",
+        "lien": "https://www.cncf.io/certification/cka/",
+        "images": ["/assets/images/k8s-cert.jpg"],
+        "description": "Proven ability to install, configure, and manage Kubernetes clusters",
+        "skills": ["Kubernetes", "Container Orchestration", "DevOps", "YAML"]
       }
     ]
   },
