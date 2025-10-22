@@ -1,15 +1,16 @@
-/* eslint-disable prettier/prettier */
-import React from 'react';
 
-import About from '../components/About';
-import Analytics from '../components/Analytics';
-import Canvas from '../components/Canvas';
-import Certifs from '../components/Certifs';
-import Header from '../components/Header';
-import LazyShow from '../components/LazyShow';
-import MainHero from '../components/MainHero';
-import MainHeroImage from '../components/MainHeroImage';
-import Product from '../components/Product';
+import React from "react";
+
+import About from "../components/About";
+import Analytics from "../components/Analytics";
+import Canvas from "../components/Canvas";
+import Certifs from "../components/Certifs";
+import Education from "../components/Education";
+import Header from "../components/Header";
+import LazyShow from "../components/LazyShow";
+import MainHero from "../components/MainHero";
+import MainHeroImage from "../components/MainHeroImage";
+import Product from "../components/Product";
 
 const App = () => {
   return (
@@ -30,14 +31,14 @@ const App = () => {
         <>
           <Product />
           <Canvas />
-          <Certifs/>
+          <Education />
+          <Canvas />
+          <Certifs />
         </>
       </LazyShow>
 
-  
       <LazyShow>
         <>
-         
           <About />
         </>
       </LazyShow>

@@ -1,5 +1,4 @@
-/* eslint-disable prettier/prettier */
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from "react";
 
 const useResponsiveSize = () => {
   const [width, setWidth] = useState(0);
@@ -11,7 +10,7 @@ const useResponsiveSize = () => {
   }, [setWidth, setHeight]);
 
   useEffect(() => {
-    window.addEventListener('resize', setSizes);
+    window.addEventListener("resize", setSizes);
     setSizes();
   }, [setSizes]);
 

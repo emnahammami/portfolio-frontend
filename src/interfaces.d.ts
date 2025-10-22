@@ -1,7 +1,4 @@
-/* eslint-disable prettier/prettier */
-// eslint-disable-next-line prettier/prettier
-// eslint-disable-next-line prettier/prettier
-declare module 'react-scroll';
+
 
 // Certificate interfaces
 export interface ICertificate {

@@ -1,7 +1,6 @@
-/* eslint-disable prettier/prettier */
-import React from 'react';
+import React from "react";
 
-import config from '../config/index.json';
+import config from "../config/index.json";
 
 const About = () => {
   const { company, about } = config;
@@ -80,9 +79,9 @@ const About = () => {
         </div>
         <div className="flex items-center mt-6">
           <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">
-            &copy; {new Date().getFullYear()} created by{' '}
+            &copy; {new Date().getFullYear()} created by{" "}
             <a href="https://github.com/emnahammami" rel="nofollow">
-            Emna   Hammami
+              Emna Hammami
             </a>
           </p>
         </div>

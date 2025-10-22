@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import config from '../config/index.json';
+import config from "../config/index.json";
 
 const Features = () => {
   const { features } = config;

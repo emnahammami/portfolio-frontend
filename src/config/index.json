@@ -9,6 +9,10 @@
       "href": "product"
     },
     {
+      "name": "Education",
+      "href": "education"
+    },
+    {
       "name": "Certifications",
       "href": "certifs"
     }
@@ -109,6 +113,32 @@
           "100 GB of storage",
           "Phone and Email support"
         ]
+      }
+    ]
+  },
+  "education": {
+    "title": "My Education",
+    "subtitle": "Academic journey and professional development",
+    "education": [
+      {
+        "level": "undergraduate",
+        "degree": "Bachelor's Degree",
+        "field": "Computer Science and Multimedia",
+        "institution": "Higher Institute of Multimedia Arts of La Manouba (ISAMM)",
+        "location": "La Manouba, Tunisia",
+        "startDate": "September 2014",
+        "endDate": "June 2017",
+        "status": "completed"
+      },
+      {
+        "level": "graduate",
+        "degree": "National Engineering Diploma",
+        "field": "Engineering and Technology",
+        "institution": "Private Higher School of Engineering and Technology (ESPRIT)",
+        "location": "Ariana, Tunisia",
+        "startDate": "September 2022",
+        "endDate": "January 2025",
+        "status": "completed"
       }
     ]
   },

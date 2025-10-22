@@ -1,10 +1,10 @@
-/* eslint-disable prettier/prettier */
-import React from 'react';
+
+import React from "react";
 
 type DividerProps = {
   width?: string;
 };
-const Divider = ({ width = 'w-64' }: DividerProps) => {
+const Divider = ({ width = "w-64" }: DividerProps) => {
   return (
     <div className={`w-full mb-4`}>
       <div
